@@ -1,13 +1,111 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>agency-creative</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Grow your brand online with our digital agency offering social media management,advertising services,SEO and design"/>
+    <title>Grow Your Brand Online | Digital Agency Services</title>
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
+   <section id="hero" class="hero">
+      <h1>Grow Your Brand Online</h1>
+      <p>
+        A results-driven digital agency offering social media management,
+      SEO, creative design, and digital advertising solutions.
+    </p>
+    <a href="#collaborate" class="btn-primary">Get Started</a>
+  </section>    
+  
+  <section id="about-us"class="about-us">
+    <h2>About Us</h2>
+    <p>
+      We are a team of passionate digital marketers, designers, and strategists dedicated to helping businesses thrive in the online world. Our mission is to deliver measurable results through innovative strategies and creative solutions.
+    </p>
+  </section>
+
+  <section id="services" class="services">
+    <h2>Our Services</h2>
+    <p class="section-intro">
+    We provide tailored solutions to help your business grow online. Explore our main offerings below:
+  </p>
+
+    <div class="services-grid">
+
+      <div class="service-card">
+        <h3>Social Media Management</h3>
+        <p>Engage your audience and grow your brand with our expert social media strategies.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>Digital Advertising</h3>
+        <p>Maximize your ROI with targeted ad campaigns across multiple platforms.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>Search Engine Optimization (SEO)</h3>
+        <p>Improve your website's visibility and ranking on search engines.</p>
+      </div> 
+
+      <div class="service-card">
+        <h3>Creative Design</h3>
+        <p>Stand out with visually stunning designs that capture your brand's essence.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="what-we-do" class="what-we-do">
+    <h2>What We Do</h2>
+    <p>
+       From strategy to execution, we provide end-to-end digital solutions
+      tailored to your business needs.
+    </p>
+  </section>
+
+  <section id="testimonials" class="testimonials">
+    <h2>What Our Client Say</h2>
+    <div class="testimonial-card">
+      <p>"This agency transformed our online presence and boosted our sales significantly!"</p>
+      <span class="client-name">- Happy Client</span>
+    </div>
+    <div class="testimonial-card">
+      <p>"Their team is knowledgeable, creative, and results-oriented. Highly recommend!"</p>
+      <span class="client-name">- Satisfied Customer</span>
+    </div>
+  </section>
+
+  <section id="cllaborate" class="collaborate">
+    <h2>Collaborate With Us</h2>
+    <p>
+      Ready to take your business to the next level? Contact us today to discuss how we can help you achieve your digital marketing goals.
+    </p>
+
+   <form class="contact-form">
+  <label>
+    Your Name
+    <input type="text" name="name" placeholder="John Doe" required />
+  </label>
+
+  <label>
+    Your Email
+    <input type="email" name="email" placeholder="example@email.com" required />
+  </label>
+
+  <label>
+    Project Details
+    <textarea name="project" placeholder="Tell us about your project" rows="5"></textarea>
+  </label>
+
+  <button type="submit" class="btn btn-submit">Send Message</button>
+</form>
+
+
+</section>
+
+<footer id="footer" class="footer">
+  <p>© 2026 Digital Agency. All rights reserved.</p>
+</footer>
+
+<script type="module" src="/src/main.js"></script>
+
   </body>
 </html>
