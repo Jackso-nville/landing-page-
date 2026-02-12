@@ -1,13 +1,23 @@
-@import './variables.css';
-@import './base.css';
-@import './layout.css';
-@import './components.css';
+/*
+ * MAIN STYLESHEET
+ * ===============
+ * This file imports all other CSS files in the correct order
+ * Order matters! Variables must come first, then base styles, etc.
+ */
 
-/*Remove default margin and padding*/
-*,
-*::before,
-*::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* 1. Variables - CSS custom properties (colors, spacing, etc.) */
+@import "./variables.css";
+
+/* 2. Base - Resets and foundational styles */
+@import "./base.css";
+
+/* 3. Layout - Major page sections and responsive grid */
+@import "./layout.css";
+
+/* 4. Components - Reusable UI components */
+@import "./components.css";
+
+/*
+ * GLOBAL OVERRIDES
+ * Any additional global styles can go here
+*/

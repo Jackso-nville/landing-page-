@@ -1,0 +1,13 @@
+/*
+* BASE STYLES
+* ===========
+* This file contains CSS reset, base elements styles, and utility classes
+*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
