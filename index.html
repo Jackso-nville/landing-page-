@@ -1,145 +1,555 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Grow your brand online with our digital agency offering social media management,advertising services,SEO and design"/>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Grow your brand online with our digital agency offering social media management,advertising services,SEO and design"
+    />
     <title>Agency Creative | Digital Agency Services</title>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="/src/styles/main.css" />
   </head>
 
   <body>
-    <header class="site-header">
-      <div class="header-container">
+    <header class="header">
+      <div class="container">
         <!--Logo Brand-->
-        <a href="/" class="logo" aria-label="Agency Creative - Home">
-          <img src="images/logo.png" alt="">
-          <span class="brand-name">
-            <span class="brand-line">Agency</span>
-            <span class="brand-line">Creative</span>
+        <a href="/" class="haeder__logo">
+          <img src="images/logo.png" alt="" class="header__logo-image" />
+          <span class="header__brand">
+            <span class="header__brand-line">Agency</span>
+            <span class="header__brand-line">Creative</span>
           </span>
         </a>
 
         <!--Mobile menu toggle button-->
-        <button class="menu-toggle" aria-label="Toggle nav menu" aria-expanded="false">
-          <img src="assets/icons/hamburger-menu.svg" alt="" aria-hidden="true">
+        <button class="header__menu-toggle" aria-expanded="false">
+          <img
+            src="assets/icons/hamburger-menu.svg"
+            alt=""
+            aria-hidden="true"
+          />
         </button>
 
         <!--Main Navigation-->
-        <nav class="main-nav" aria-label="Main navigation">
-          <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/service">Service</a></li>
-            <li><a href="/projects">Projects</a></li>
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a href="/" class="header__nav-link">Home</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="/about" class="header__nav-link">About</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="/service" class="header__nav-link">Service</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="/projects" class="header__nav-link">Projects</a>
+            </li>
           </ul>
         </nav>
 
         <!--CTA Button (Visible on desktop)-->
-        <div class="header-actions">
-          <a href="/contact" class="cta-button">Contact us</a>
+        <div class="header__actions">
+          <a href="/contact" class="header__btn--secodary">Contact us</a>
         </div>
       </div>
     </header>
 
-   <section id="hero" class="hero">
-      <h1>Grow Your Brand Online</h1>
-      <p>
-        A results-driven digital agency offering social media management,
-      SEO, creative design, and digital advertising solutions.
-    </p>
-    <a href="#collaborate" class="btn-primary">Get Started</a>
-  </section>    
-  
-  <section id="about-us" class="about-us">
-    <h2>About Us</h2>
-    <p>
-      We are a team of passionate digital marketers, designers, and strategists dedicated to helping businesses thrive in the online world. Our mission is to deliver measurable results through innovative strategies and creative solutions.
-    </p>
-  </section>
+    <section class="hero">
+      <div class="container">
 
-  <section id="services" class="services">
-    <h2>Our Services</h2>
-    <p class="section-intro">
-    We provide tailored solutions to help your business grow online. Explore our main offerings below:
-  </p>
-
-    <div class="services-grid">
-
-      <div class="service-card">
-        <h3>Social Media Management</h3>
-        <p>Engage your audience and grow your brand with our expert social media strategies.</p>
+        <!--Main hero content-->
+        <div class="hero__content">
+          <h1 class="hero__title">Make your dream business goal come true</h1>
+          <p class="hero__description">
+            when you need us for improve your business, then come with us to
+            help your business have reach it, you just sit and feel that goal
+          </p>
+          <a href="#collaborate" class="hero__btn--primary">Start Project</a>
+        </div>
       </div>
 
-      <div class="service-card">
-        <h3>Digital Advertising</h3>
-        <p>Maximize your ROI with targeted ad campaigns across multiple platforms.</p>
+      <!--Hero Image Section-->
+      <div class="hero__image-wrapper">
+
+        <!--Image Carousel Dots-->
+        <div class="hero__carousel-dots">
+          <span class="hero__dot hero__dot--blue"></span>
+          <span class="hero__dot"></span>
+          <span class="hero__dot"></span>
+          <span class="hero__dot"></span>
+          <span class="hero__dot"></span>
+        </div>
+
+        <!--Stats Badge-->
+        <div class="hero__badge">
+          <span class="hero__badge-icon">⭐</span>
+          <span class="hero__badge-text">GREAT PROJECT</span>
+          <div class="hero__badge-stat"><strong>800+</strong> Done</div>
+        </div>
+
+        <!--Main Image-->
+        <img
+          src="/assets/images/hero-image.jpg"
+          alt="Team collaborating on business project"
+          class="hero__image"
+        />
+
+        <!--Testimonial Card-->
+        <div class="hero__testimonial">
+          <img
+            src="/assets/images/potfolio-image-1.jpg"
+            alt="Bill Adams"
+            class="hero__testimonial-avatar"
+          />
+        </div>
+
+        <!--Image Carousel Dots-->
+        <div class="hero__carousel-dots">
+          <span class="hero__dot hero__dot--red"></span>
+          <span class="hero__dot"></span>
+          <span class="hero__dot"></span>
+          <span class="hero__dot"></span>
+          <span class="hero__dot"></span>
+        </div>
       </div>
-
-      <div class="service-card">
-        <h3>Search Engine Optimization (SEO)</h3>
-        <p>Improve your website's visibility and ranking on search engines.</p>
-      </div> 
-
-      <div class="service-card">
-        <h3>Creative Design</h3>
-        <p>Stand out with visually stunning designs that capture your brand's essence.</p>
+      
+      <!--Decorative Elements-->
+      <span class="hero__decoration hero__decoration--blue-left"></span>
+      <span class="hero__decoration hero__decoration--red-bottom"></span>
+      <span class="hero__decoration hero__decoration--red-right"></span>
+      <span class="hero__decoration hero__decoration--blue-right"></span>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="what-we-do" class="what-we-do">
-    <h2>What We Do</h2>
-    <p>
-       From strategy to execution, we provide end-to-end digital solutions
-      tailored to your business needs.
-    </p>
-  </section>
+    <section class="about">
+      <div class="container">
+        <!--Section label-->
+        <span class="about__label">About Us</span>
 
-  <section id="testimonials" class="testimonials">
-    <h2>What Our Client Say</h2>
-    <div class="testimonial-card">
-      <p>"This agency transformed our online presence and boosted our sales significantly!"</p>
-      <span class="client-name">- Happy Client</span>
-    </div>
-    <div class="testimonial-card">
-      <p>"Their team is knowledgeable, creative, and results-oriented. Highly recommend!"</p>
-      <span class="client-name">- Satisfied Customer</span>
-    </div>
-  </section>
+        <!--Section Title-->
+        <h2 class="about__title">Our Teammate</h2>
 
-  <section id="cllaborate" class="collaborate">
-    <h2>Collaborate With Us</h2>
-    <p>
-      Ready to take your business to the next level? Contact us today to discuss how we can help you achieve your digital marketing goals.
-    </p>
+        <div class="about__content">
+          <!--Image Side-->
+          <div class="about__image-wrapper">
 
-   <form class="contact-form">
-  <label>
-    Your Name
-    <input type="text" name="name" placeholder="John Doe" required />
-  </label>
+            <!--Left Decorative dots. Will auto generate with css-->
+            <div class="about__decoration about__decoration--dots-left"></div>
 
-  <label>
-    Your Email
-    <input type="email" name="email" placeholder="example@email.com" required />
-  </label>
+            <!--Image-->
+            <img 
+              src="/assets/images/about-us-image.jpg" 
+              alt="Team members collaborating in a meeting" 
+              class="about__image"
+            />
 
-  <label>
-    Project Details
-    <textarea name="project" placeholder="Tell us about your project" rows="5"></textarea>
-  </label>
+            <!--Left Decorative dots. Will auto generate with css-->
+            <div class="about__decoration about__decoration--dots-right"></div>
+          </div>
 
-  <button type="submit" class="btn btn-submit">Send Message</button>
-</form>
+          <!--Content Side-->
+          <div class="about__text-wrapper">
+            <p class="about__description">
+              We move with make a Creative Strategy for help your business 
+              goal, we help to improve your income by a services we have. 
+              make your content look interesting and make people look for 
+              your business
+            </p>
 
+            <p class="about__description">
+              We move with make a Creative Strategy for help your business 
+              goal, we help to improve your income by a services we have. 
+              make your content look interesting and make people look for 
+              your business
+            </p>
 
-</section>
+            <!--CTA Buttons-->
+            <div class="about__actions">
+              <a href="/about" class="about__btn about__btn--primary">About Us</a>
+              <a href="/story" class="about__btn about__btn--secondary">
+                <svg class="about__btn-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <circle cx="10" cy="10" r="9" stroke="currentColor" stroke-width="2"/>
+                  <path d="M8 7L12 10L8 13V7Z" fill="currentColor"/>
+                </svg>
+                Our Story
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>      
+    </section>
 
-<footer id="footer" class="footer">
-  <p>© 2026 Digital Agency. All rights reserved.</p>
-</footer>
+    <section class="services">
+      <div class="container">
+        <div class="services__content">
+          <!--Left Side - Text Content-->
+          <div class="services__text-wrapper">
+            <!--Services Label-->
+            <span class="services__label">Our Services</span>
 
-<script type="module" src="/src/main.js"></script>
+            <!--Services Title-->
+            <h2 class="services__title">Perfect and Fast Movement</h2>
 
+            <p class="services__description">
+              We Move with make a Creative Stategy for help your
+              business goal, we help to improve your income by a
+              service we have. Make your content look interesting
+              and make people look for your business.
+            </p>
+
+            <!--CTA Link-->
+            <a href="/services" class="services__btn services__btn--tertiary">
+              Read more
+              <svg class="services__link-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M7 4L13 10L7 16" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </a>
+          </div>
+          
+          <!--Right Side - Service Cards Grid-->
+          <div class="services__grid">
+            <!--Service Card 1-->
+            <article class="service__card">
+              <div class="service__card-icon service__card-icon-blue">
+                <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M35 5.25H7C5.067 5.25 3.5 6.817 3.5 8.75V26.25C3.5 28.183 5.067 29.75 7 29.75H35C36.933 29.75 38.5 28.183 38.5 26.25V8.75C38.5 6.817 36.933 5.25 35 5.25Z" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M14 36.75H28" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M21 29.75V36.75" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <h3 class="services__card-title">Social Media Management</h3>
+            </article>
+
+            <!--Service Card 2-->
+            <article class="service__card">
+              <div class="service__card-icon service__card-icon-blue">
+                <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_1_1272)">
+                  <path d="M21 26.25C23.8995 26.25 26.25 23.8995 26.25 21C26.25 18.1005 23.8995 15.75 21 15.75C18.1005 15.75 15.75 18.1005 15.75 21C15.75 23.8995 18.1005 26.25 21 26.25Z" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M33.95 26.25C33.717 26.7778 33.6476 27.3633 33.7505 27.931C33.8534 28.4987 34.1241 29.0226 34.5275 29.435L34.6325 29.54C34.9579 29.8651 35.2161 30.2511 35.3922 30.676C35.5683 31.1009 35.659 31.5563 35.659 32.0163C35.659 32.4762 35.5683 32.9316 35.3922 33.3565C35.2161 33.7814 34.9579 34.1674 34.6325 34.4925C34.3074 34.8179 33.9214 35.0761 33.4965 35.2522C33.0716 35.4283 32.6162 35.519 32.1562 35.519C31.6963 35.519 31.2409 35.4283 30.816 35.2522C30.3911 35.0761 30.0051 34.8179 29.68 34.4925L29.575 34.3875C29.1626 33.9841 28.6387 33.7134 28.071 33.6105C27.5033 33.5076 26.9178 33.577 26.39 33.81C25.8724 34.0318 25.431 34.4002 25.12 34.8697C24.8091 35.3392 24.6422 35.8894 24.64 36.4525V36.75C24.64 37.6783 24.2712 38.5685 23.6149 39.2249C22.9585 39.8812 22.0683 40.25 21.14 40.25C20.2117 40.25 19.3215 39.8812 18.6651 39.2249C18.0087 38.5685 17.64 37.6783 17.64 36.75V36.5925C17.6265 36.0133 17.439 35.4515 17.1019 34.9802C16.7648 34.509 16.2938 34.15 15.75 33.95C15.2222 33.717 14.6367 33.6476 14.069 33.7505C13.5013 33.8534 12.9774 34.1241 12.565 34.5275L12.46 34.6325C12.1349 34.9579 11.7489 35.2161 11.324 35.3922C10.8991 35.5683 10.4437 35.659 9.98375 35.659C9.5238 35.659 9.06835 35.5683 8.64346 35.3922C8.21857 35.2161 7.83256 34.9579 7.5075 34.6325C7.18208 34.3074 6.92393 33.9214 6.74779 33.4965C6.57166 33.0716 6.481 32.6162 6.481 32.1562C6.481 31.6963 6.57166 31.2409 6.74779 30.816C6.92393 30.3911 7.18208 30.0051 7.5075 29.68L7.6125 29.575C8.01594 29.1626 8.28657 28.6387 8.38951 28.071C8.49244 27.5033 8.42295 26.9178 8.19 26.39C7.96816 25.8724 7.59982 25.431 7.13031 25.12C6.66081 24.8091 6.11063 24.6422 5.5475 24.64H5.25C4.32174 24.64 3.4315 24.2712 2.77513 23.6149C2.11875 22.9585 1.75 22.0683 1.75 21.14C1.75 20.2117 2.11875 19.3215 2.77513 18.6651C3.4315 18.0087 4.32174 17.64 5.25 17.64H5.4075C5.98674 17.6265 6.54851 17.439 7.01977 17.1019C7.49104 16.7648 7.85 16.2938 8.05 15.75C8.28295 15.2222 8.35244 14.6367 8.24951 14.069C8.14657 13.5013 7.87594 12.9774 7.4725 12.565L7.3675 12.46C7.04208 12.1349 6.78393 11.7489 6.60779 11.324C6.43166 10.8991 6.341 10.4437 6.341 9.98375C6.341 9.5238 6.43166 9.06835 6.60779 8.64346C6.78393 8.21857 7.04208 7.83256 7.3675 7.5075C7.69256 7.18208 8.07857 6.92393 8.50346 6.74779C8.92835 6.57166 9.3838 6.481 9.84375 6.481C10.3037 6.481 10.7591 6.57166 11.184 6.74779C11.6089 6.92393 11.9949 7.18208 12.32 7.5075L12.425 7.6125C12.8374 8.01594 13.3613 8.28657 13.929 8.38951C14.4967 8.49244 15.0822 8.42295 15.61 8.19H15.75C16.2676 7.96816 16.709 7.59982 17.02 7.13031C17.3309 6.66081 17.4978 6.11063 17.5 5.5475V5.25C17.5 4.32174 17.8688 3.4315 18.5251 2.77513C19.1815 2.11875 20.0717 1.75 21 1.75C21.9283 1.75 22.8185 2.11875 23.4749 2.77513C24.1312 3.4315 24.5 4.32174 24.5 5.25V5.4075C24.5022 5.97063 24.6691 6.52081 24.98 6.99031C25.291 7.45982 25.7324 7.82816 26.25 8.05C26.7778 8.28295 27.3633 8.35244 27.931 8.24951C28.4987 8.14657 29.0226 7.87594 29.435 7.4725L29.54 7.3675C29.8651 7.04208 30.2511 6.78393 30.676 6.60779C31.1009 6.43166 31.5563 6.341 32.0163 6.341C32.4762 6.341 32.9316 6.43166 33.3565 6.60779C33.7814 6.78393 34.1674 7.04208 34.4925 7.3675C34.8179 7.69256 35.0761 8.07857 35.2522 8.50346C35.4283 8.92835 35.519 9.3838 35.519 9.84375C35.519 10.3037 35.4283 10.7591 35.2522 11.184C35.0761 11.6089 34.8179 11.9949 34.4925 12.32L34.3875 12.425C33.9841 12.8374 33.7134 13.3613 33.6105 13.929C33.5076 14.4967 33.577 15.0822 33.81 15.61V15.75C34.0318 16.2676 34.4002 16.709 34.8697 17.02C35.3392 17.3309 35.8894 17.4978 36.4525 17.5H36.75C37.6783 17.5 38.5685 17.8688 39.2249 18.5251C39.8812 19.1815 40.25 20.0717 40.25 21C40.25 21.9283 39.8812 22.8185 39.2249 23.4749C38.5685 24.1312 37.6783 24.5 36.75 24.5H36.5925C36.0294 24.5022 35.4792 24.6691 35.0097 24.98C34.5402 25.291 34.1718 25.7324 33.95 26.25Z" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0_1_1272">
+                  <rect width="42" height="42" fill="white"/>
+                  </clipPath>
+                  </defs>
+                </svg>
+              </div>
+              <h3 class="services__card-title">Search Engine Optimisation</h3>
+            </article>
+
+            <!--Service Card 3-->
+            <article class="service__card">
+              <div class="service__card-icon service__card-icon-blue">
+                <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M21 33.25L33.25 21L38.5 26.25L26.25 38.5L21 33.25Z" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M31.5 22.75L28.875 9.625L3.5 3.5L9.625 28.875L22.75 31.5L31.5 22.75Z" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M3.5 3.5L16.7755 16.7755" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M19.25 22.75C21.183 22.75 22.75 21.183 22.75 19.25C22.75 17.317 21.183 15.75 19.25 15.75C17.317 15.75 15.75 17.317 15.75 19.25C15.75 21.183 17.317 22.75 19.25 22.75Z" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <h3 class="services__card-title">Design</h3>
+            </article>
+
+            <!--Service Card 4-->
+            <article class="service__card">
+              <div class="service__card-icon service__card-icon-blue">
+                <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M35 12.25H7C5.067 12.25 3.5 13.817 3.5 15.75V35C3.5 36.933 5.067 38.5 7 38.5H35C36.933 38.5 38.5 36.933 38.5 35V15.75C38.5 13.817 36.933 12.25 35 12.25Z" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M29.75 3.5L21 12.25L12.25 3.5" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <h3 class="services__card-title">Ads</h3>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio">
+      <div class="container">
+        <div class="portfolio__header">
+          <!--Section label-->
+          <span class="portfolio__label">Our Portfolio</span>
+
+          <!--Section Title-->
+          <h2 class="portfolio__title">What we&rsquo;ve done</h2>
+
+          <!--Section Paragraph-->
+          <p class="portfolio__description">All projects that we have already done, proven can help us more comfortable, then can used by client from our business.</p>
+        </div>
+
+        <!--Left Decorative dots. Will auto generate with css-->
+        <div class="potfolio__decoration portfolio__decoration--dots-top"></div>
+
+        <!-- Portfolio Grid -->
+        <div class="portfolio__grid">
+          <!-- Portfolio Item 1 -->
+          <article class="portfolio__card">
+            <div class="portfolio__card-image">
+              <img 
+                src="assets/images/potfolio-image-1.jpg" 
+                alt="Design Byte App mobile interface" 
+                class="portfolio__image"
+              />
+              <div class="portfolio__card-overlay">
+                <h3 class="portfolio__card-title">Design Byte App</h3>
+              </div>
+            </div>
+          </article>
+
+          <!-- Decorative dots (middle left) -->
+          <div class="portfolio__decoration portfolio__decoration--dots-middle"></div>
+
+          <!-- Portfolio Item 2 -->
+          <article class="portfolio__card">
+            <div class="portfolio__card-image">
+              <img 
+                src="assets/images/potfolio-image-2.jpg" 
+                alt="Cloud App planning and design" 
+                class="portfolio__image"
+              />
+              <div class="portfolio__card-overlay">
+                <h3 class="portfolio__card-title">Cloud App</h3>
+              </div>
+            </div>
+          </article>
+
+          <!-- Portfolio Item 3 -->
+          <article class="portfolio__card">
+            <div class="portfolio__card-image">
+              <img 
+                src="assets/images/potfolio-image-3.jpg" 
+                alt="Design Furniture App interface" 
+                class="portfolio__image"
+              />
+              <div class="portfolio__card-overlay">
+                <h3 class="portfolio__card-title">Design Furniture App</h3>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- CTA Button -->
+        <div class="portfolio__actions">
+          <a href="/portfolio" class="portfolio__btn--secondary">See All Portfolio</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <div class="container">
+        <!-- Decorative dots (top left) -->
+        <div class="testimonials__decoration testimonials__decoration--dots-top"></div>
+
+        <!-- Section Header -->
+        <div class="testimonials__header">
+          <span class="testimonials__label">Testimonial</span>
+          <h2 class="testimonials__title">People Talk about us</h2>
+        </div>
+
+        <!-- Testimonials Grid -->
+        <div class="testimonials__grid">
+          <!-- Testimonial Card 1 -->
+          <article class="testimonials__card">
+            <div class="testimonials__card-header">
+              <img 
+                src="assets/images/client-1.jpg" 
+                alt="Angel Rose" 
+                class="testimonials__avatar"
+              />
+              <div class="testimonials__author">
+                <h3 class="testimonials__name">Angel Rose</h3>
+                <p class="testimonials__role">Creative Manager</p>
+              </div>
+            </div>
+            <p class="testimonials__text">
+              There are many variations passages of Lorem Ipsum majority 
+              some by words which don't look.
+            </p>
+          </article>
+
+          <!-- Testimonial Card 2 -->
+          <article class="testimonials__card">
+            <div class="testimonials__card-header">
+              <img 
+                src="assets/images/client-1.jpg" 
+                alt="Angel Rose" 
+                class="testimonials__avatar"
+              />
+              <div class="testimonials__author">
+                <h3 class="testimonials__name">Angel Rose</h3>
+                <p class="testimonials__role">Creative Manager</p>
+              </div>
+            </div>
+            <p class="testimonials__text">
+              There are many variations passages of Lorem Ipsum majority 
+              some by words which don't look.
+            </p>
+          </article>
+
+          <!-- Testimonial Card 3 -->
+          <article class="testimonials__card">
+            <div class="testimonials__card-header">
+              <img 
+                src="assets/images/client-1.jpg" 
+                alt="Angel Rose" 
+                class="testimonials__avatar"
+              />
+              <div class="testimonials__author">
+                <h3 class="testimonials__name">Angel Rose</h3>
+                <p class="testimonials__role">Creative Manager</p>
+              </div>
+            </div>
+            <p class="testimonials__text">
+              There are many variations passages of Lorem Ipsum majority 
+              some by words which don't look.
+            </p>
+          </article>
+        </div>
+
+        <!-- Decorative dots (bottom right) -->
+        <div class="testimonials__decoration testimonials__decoration--dots-bottom"></div>
+      </div>
+    </section>
+
+    <section class="collaboration">
+      <div class="container">
+        <div class="collaboration__content">
+          <!-- Left Side - Text Content -->
+          <div class="collaboration__text">
+            <h2 class="collaboration__title">
+              Interesting Collaboration With Us?
+            </h2>
+            <p class="collaboration__description">
+              Help you to reach your business goal
+            </p>
+            <a href="/contact" class="collaboration__btn">Get Started</a>
+          </div>
+
+          <!-- Right Side - Images -->
+          <div class="collaboration__images">
+            <!-- Decorative dots (top) -->
+            <div class="collaboration__decoration collaboration__decoration--dots-top"></div>
+
+            <!-- Main Image -->
+            <div class="collaboration__image-main">
+              <img 
+                src="assets/images/collaboration-image-1.jpg" 
+                alt="Team members collaborating and high-fiving" 
+                class="collaboration__image"
+              />
+            </div>
+
+            <!-- Secondary Image (overlapping) -->
+            <div class="collaboration__image-secondary">
+              <img 
+                src="assets/images/collaboration-image-1.jpg" 
+                alt="Modern office workspace with team" 
+                class="collaboration__image"
+              />
+            </div>
+
+            <!-- Decorative dots (bottom right) -->
+            <div class="collaboration__decoration collaboration__decoration--dots-bottom"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content">
+          <!-- Logo Column -->
+          <div class="footer__column footer__column--logo">
+            <a href="/" class="footer__logo">
+              <img src="public/images/logo.png" alt="Agency Creative Logo" />
+              <span class="footer__brand">
+                <span class="footer__brand-line">Agency</span>
+                <span class="footer__brand-line">Creative</span>
+              </span>
+            </a>
+          </div>
+
+          <!-- Terms & Policies Column -->
+          <div class="footer__column">
+            <h3 class="footer__heading">Terms & policies</h3>
+            <ul class="footer__links">
+              <li><a href="/terms">Terms of Service</a></li>
+              <li><a href="/privacy">Privacy Policy</a></li>
+            </ul>
+          </div>
+
+          <!-- Company Column -->
+          <div class="footer__column">
+            <h3 class="footer__heading">Company</h3>
+            <ul class="footer__links">
+              <li><a href="/">Home</a></li>
+              <li><a href="/about">About Us</a></li>
+              <li><a href="/contact">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <!-- Contact Column -->
+          <div class="footer__column">
+            <h3 class="footer__heading">Contact</h3>
+            <ul class="footer__contact">
+              <li><a href="tel:+6289391239219">(+62) 893912392190</a></li>
+              <li><a href="mailto:agecyicr@gmail.com">agecyicr@gmail.com</a></li>
+            </ul>
+          </div>
+
+          <!-- Location Column -->
+          <div class="footer__column">
+            <h3 class="footer__heading">Location</h3>
+            <address class="footer__address">
+              <p>PT Osiris Real Estate Internasional</p>
+              <p>Jl. KH. Wahid Hasyim Kel No.10D</p>
+              <p>Jakarta, Indonesia</p>
+              <p><a href="mailto:team@OsirisRealEstate.com">team@OsirisRealEstate.com</a></p>
+            </address>
+          </div>
+        </div>
+
+        <!-- Social Media & Copyright -->
+        <div class="footer__bottom">
+          <ul class="footer__social">
+            <li>
+              <a href="https://facebook.com" aria-label="Facebook" class="footer__social-link">
+                <img src="assets/icons/facebook.svg" alt="" aria-hidden="true" />
+              </a>
+            </li>
+            <li>
+              <a href="https://instagram.com" aria-label="Instagram" class="footer__social-link">
+                <img src="assets/icons/instagram.svg" alt="" aria-hidden="true" />
+              </a>
+            </li>
+            <li>
+              <a href="https://linkedin.com" aria-label="LinkedIn" class="footer__social-link">
+                <img src="assets/icons/linkedin.svg" alt="" aria-hidden="true" />
+              </a>
+            </li>
+            <li>
+              <a href="mailto:agecyicr@gmail.com" aria-label="Email" class="footer__social-link">
+                <img src="assets/icons/email.svg" alt="" aria-hidden="true" />
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com" aria-label="Twitter" class="footer__social-link">
+                <img src="assets/icons/twitter.svg" alt="" aria-hidden="true" />
+              </a>
+            </li>
+          </ul>
+
+          <p class="footer__copyright">
+            Copyright @ 2022 Agency Creative. All Right Reserved
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/src/main.js"></script>
   </body>
 </html>
